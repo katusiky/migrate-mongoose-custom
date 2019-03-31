@@ -1,0 +1,42 @@
+{
+  "name": "migrate-mongoose-custom",
+  "version": "0.2.1",
+  "description": "A mongoose based migration framework for node",
+  "main": "./dist/lib.js",
+  "scripts": {
+    "prepublish": "scripts/prepublish.sh",
+    "postpublish": "rm -r ./dist",
+    "postversion": "git push && git push --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "migrate": "./dist/cli.js"
+  },
+  "keywords": [
+    "migrate",
+    "migration",
+    "mongoose",
+    "schema",
+    "mongodb"
+  ],
+  "author": "José De León <josedeleon.ka@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katusiky/migrate-mongoose-custom.git"
+  },
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "bluebird": "^3.3.3",
+    "colors": "^1.1.2",
+    "inquirer": "^0.12.0",
+    "mkdirp": "^0.5.1",
+    "mongoose": "^5.3.13",
+    "yargs": "^4.8.1"
+  }
+}
